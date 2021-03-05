@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    padding: 0px 30px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.decor-line{
+    background: #E8E8E8;
+    height: 1px;
+    width: 100%;
+}
+
+

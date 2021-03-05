@@ -1,0 +1,139 @@
+.stay {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    padding-top: 88px;
+    padding-left: 121px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #0B1306;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #0B1306;
+    opacity: 0.8;
+    max-width: 415px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  form {
+    display: flex;
+  }
+
+  &__input {
+    max-width: 367px;
+    width: 100%;
+    padding: 14px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba($color: #0B1306, $alpha: 0.5);
+    outline: none;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: #0B1306;
+      opacity: 0.5;
+      font-weight: 500;
+    }
+
+  }
+
+  &__btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #649745;
+    border-radius: 6px;
+    padding: 9px 23px;
+    border: none;
+    outline: none;
+    margin-left: 16px;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+      background: #16280D;
+    }
+  }
+
+  &__right {
+    margin-top: 25px;
+    max-width: 680px;
+    width: 100%;
+    padding: 40px 40px 0px 40px;
+    background: #F4F4F4;
+    border-radius: 6px;
+  }
+
+  &__right-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.015em;
+    color: #0B1306;
+    margin-bottom: 20px;
+  }
+
+  &__emails {
+    border-top: 1px solid #CFCFCF;
+    padding-top: 24px;
+    max-height: 280px;
+    overflow: hidden;
+
+    div {
+      padding: 15px 22px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      margin-bottom: 8px;
+      transition: all .5s;
+      border-radius: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background: #E2E3EB;
+
+      }
+
+      &:first-child {
+        position: relative;
+
+        &::after {
+          content: 'New';
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          color: #649745;
+          position: absolute;
+          right: 22px;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
